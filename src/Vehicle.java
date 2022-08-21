@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements Actions {
     private String modelName;
     private int wheelsCount;
 
@@ -6,16 +6,11 @@ public abstract class Vehicle {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
-
     public String getModelName() {
         return modelName;
     }
-
     public int getWheelsCount() {
         return wheelsCount;
     }
 
-    public void updateTyre() {}
-    public void checkEngine(){}
-    public void  checkTrailer(){}
 }
